@@ -30,7 +30,7 @@ const checkIn = function (flightNumber, passenger) {
     // flightNum.value = '';
     if(passportNumber === passortDataBase)
 
-    0
+    
 
 
     
