@@ -26,7 +26,7 @@ function flightDataInput(){
 
 let flightNum = document.getElementById('flightNum');
 
-let passengerName = document.getElementById('PgnName').value;
+let passengerName = document.getElementById('PassengerName').value;
 
 let passportNumber = document.getElementById('passportNumber');
 
