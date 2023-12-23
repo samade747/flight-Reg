@@ -32,7 +32,7 @@ let passportNumber = document.getElementById('passportNumber').value;
 
 
 let flightDetails = {
-    passengerName: Name,
+    passengerName: passengerName,
     flightNumber: flightNum,
     passportNumber: passportNumber
 }
