@@ -5,6 +5,12 @@ const passportDataBase = [
 ];
 
 
+let flightNum = document.getElementById('flightNum');
+
+let passengerName = document.getElementById('PassengerName');
+
+let passportNumber = document.getElementById('passportNumber');
+
 
 
 function displayPassportDataBase(){
@@ -24,11 +30,9 @@ displayPassportDataBase();
 
 function flightDataInput(){
 
-let flightNum = document.getElementById('flightNum');
-
-let passengerName = document.getElementById('PassengerName').value;
-
-let passportNumber = document.getElementById('passportNumber');
+flightNum = document.getElementById('flightNum');
+passengerName = document.getElementById('PassengerName');
+passportNumber = document.getElementById('passportNumber');
 
 console.log("Flight Number:", flightNum);
     console.log("Passenger Name:", Name);
@@ -55,7 +59,7 @@ function checkIn(flightDetails) {
     let found = false;
     for(let i = 0; i < passportDataBase.length; i++){
     if( 
-        passportDataBase[i].Name === flightDetails.passengerName &&
+        passportDataBase[i].passengerName === flightDetails.passengerName &&
         passportDataBase[i].flightNumber === flightDetails.flightNumber && 
         passportDataBase[i].passportNumber == flightDetails.passportNumber   
     ) {
