@@ -1,6 +1,6 @@
 const passportDataBase = [
-    {Name: 's', flightNumber: '1', passportNumber: 1},
-    {Name: 'Kamil', flightNumber: 'Ek786', passportNumber: 700778586421},
+    {passengerName: 's', flightNumber: '1', passportNumber: 1},
+    {passengerName: 'Kamil', flightNumber: 'Ek786', passportNumber: 700778586421},
 
 ];
 
@@ -32,7 +32,7 @@ let passportNumber = document.getElementById('passportNumber').value;
 
 
 let flightDetails = {
-    passengerName: passengerName,
+    passengerName: Name,
     flightNumber: flightNum,
     passportNumber: passportNumber
 }
