@@ -5,11 +5,6 @@ const passportDataBase = [
 ];
 
 
-let flightNum = document.getElementById('flightNum');
-
-let passengerName = document.getElementById('PassengerName');
-
-let passportNumber = document.getElementById('passportNumber');
 
 
 
@@ -30,22 +25,19 @@ displayPassportDataBase();
 
 function flightDataInput(){
 
-flightNum = document.getElementById('flightNum');
-passengerName = document.getElementById('PassengerName');
-passportNumber = document.getElementById('passportNumber');
+let flightNum = document.getElementById('flightNum').value;
+let passengerName = document.getElementById('ticketName').value;
+let passportNumber = document.getElementById('passportNumber').value;
 
-console.log("Flight Number:", flightNum);
-    console.log("Passenger Name:", Name);
-    console.log("Passport Number:", passportNumber);
 
 
 let flightDetails = {
+    passengerName: passengerName,
     flightNumber: flightNum,
-    passengerName: Name,    
     passportNumber: passportNumber
 }
 
-console.log(flightDetails)
+
 
 checkIn(flightDetails);
 
